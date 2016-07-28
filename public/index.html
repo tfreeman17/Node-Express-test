@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lottery</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, user-scalable=no" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.js"></script>
+</head>
+<body>
+
+<container id= "Words">
+	<h1>Lottery Game</h1>
+	<h2>Pick 4 distinct numbers between 1-10</h2>
+	<h3>Rules</h3>
+	<p>1.You will start off with $10.<br>
+			2. If you loose all your money you mush refresh to start over. You cannot go into debit.<br>
+			3.You must pick 4 different numbers, but you are allowed to play the same numbers on different turns. <br>
+	</p>
+</container>
+
+<container id = "select numbers">
+	<form>
+		<fieldset >
+			<label><input type="radio" name="1" value="1"> 1 </label>
+			<label><input type="radio" name="1" value="2"> 2 </label>
+			<label><input type="radio" name="1" value="3"> 3 </label>
+			<label><input type="radio" name="1" value="4"> 4 </label>
+			<label><input type="radio" name="1" value="5"> 5 </label>
+			<label><input type="radio" name="1" value="6"> 6 </label>
+			<label><input type="radio" name="1" value="7"> 7 </label>
+			<label><input type="radio" name="1" value="8"> 8 </label>
+			<label><input type="radio" name="1" value="9"> 9 </label>
+			<label><input type="radio" name="1" value="10"> 10 </label>
+
+			<span id="firstNumber">pick a number</span>
+		</fieldset>
+		<fieldset>
+			<label><input type="radio" name="2" value="1"> 1 </label>
+			<label><input type="radio" name="2" value="2"> 2 </label>
+			<label><input type="radio" name="2" value="3"> 3 </label>
+			<label><input type="radio" name="2" value="4"> 4 </label>
+			<label><input type="radio" name="2" value="5"> 5 </label>
+			<label><input type="radio" name="2" value="6"> 6 </label>
+			<label><input type="radio" name="2" value="7"> 7 </label>
+			<label><input type="radio" name="2" value="8"> 8 </label>
+			<label><input type="radio" name="2" value="9"> 9 </label>
+			<label><input type="radio" name="2" value="10"> 10 </label>
+
+			<span id="secondNumber"></span>
+		</fieldset>
+		<fieldset>
+			<label><input type="radio" name="3" value="1"> 1 </label>
+			<label><input type="radio" name="3" value="2"> 2 </label>
+			<label><input type="radio" name="3" value="3"> 3 </label>
+			<label><input type="radio" name="3" value="4"> 4 </label>
+			<label><input type="radio" name="3" value="5"> 5 </label>
+			<label><input type="radio" name="3" value="6"> 6 </label>
+			<label><input type="radio" name="3" value="7"> 7 </label>
+			<label><input type="radio" name="3" value="8"> 8 </label>
+			<label><input type="radio" name="3" value="9"> 9 </label>
+			<label><input type="radio" name="3" value="10"> 10 </label>
+
+
+			<span id="thirdNumber"></span>
+		</fieldset>
+		<fieldset>
+			<label><input type="radio" name="4" value="1"> 1 </label>
+			<label><input type="radio" name="4" value="2"> 2 </label>
+			<label><input type="radio" name="4" value="3"> 3 </label>
+			<label><input type="radio" name="4" value="4"> 4 </label>
+			<label><input type="radio" name="4" value="5"> 5 </label>
+			<label><input type="radio" name="4" value="6"> 6 </label>
+			<label><input type="radio" name="4" value="7"> 7 </label>
+			<label><input type="radio" name="4" value="8"> 8 </label>
+			<label><input type="radio" name="4" value="9"> 9 </label>
+			<label><input type="radio" name="4" value="10"> 10 </label>
+
+
+			<span id="forthNumber"></span>
+		</fieldset>
+		<button id= "button" type="button">
+			Submit
+		</button>
+		<!-- <button id= "Play Again" type="button">
+			Play Again
+		</button -->
+	</form>
+</container>
+<container>Winning Numbers
+<div id= "displayNumbers"> 0, 0, 0 ,0</div>
+</container>
+
+
+<container id = "winningsRules">
+	<h3>Winnings</h3>
+	<div id = "showMoney">You have $10</div>
+	<p>You win $4 if you match 2 numbers of the 4 numbers<br>
+	$8 if you match three of the 4 numbers<br>
+	$40 if they match all 4 numbers
+	</p>
+</container>
+
+<script type="text/javascript" src="radioButtonNumber copy.js"></script>
+</body>
+</html>
